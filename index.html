@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password keamanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        input[type="password"] {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #00ace5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #40c90a;
+        }
+
+        img {
+           height : auto;
+           margin : 100px ;
+           border-radius: 10px ;
+           width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>MASUKAN PASSWORD YANG BENAR</h2>
+        <input type="password" id="passwordInput" placeholder="Masukan Password Dulu Lah">
+        <br>
+        <button onclick="checkPassword()">YAKIN BANGET</button>
+        <audio id="errorSound" src="goblok.mp3"></audio> <!-- Link to your error sound -->
+        <img src="class.jpg">
+    </div>
+
+    <script>
+        const correctPassword = "kepala pusing";  // Ganti dengan password yang kamu inginkan
+
+        function checkPassword() {
+            const inputPassword = document.getElementById("passwordInput").value;
+            const errorSound = document.getElementById("errorSound");
+
+            if (inputPassword === correctPassword) {
+                alert("TAU DARI MANA PASSWORD NYA !");
+                location.href ='utama.html'
+                // Redirect ke halaman lain atau apa pun yang kamu mau lakukan
+            } else {
+                alert("SALAH GOBLOK");
+                errorSound.play();  // Memutar suara jika password salah
+            }
+        }
+    </script>
+</body>
+</html>
