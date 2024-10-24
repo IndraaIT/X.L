@@ -18,8 +18,67 @@ header {
     text-align: center;
 }
 
+/* Container menu di pojok kanan atas */
+.menu-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Tombol menu berbentuk garis 3 (hamburger) */
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Garis-garis dalam tombol hamburger */
+.menu-btn div {
+    background-color: #333;
+    height: 3px;
+    border-radius: 3px;
+}
+
+/* Dropdown menu yang muncul saat tombol diklik */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Item dalam menu dropdown */
+.menu-dropdown a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover efek untuk item menu */
+.menu-dropdown a:hover {
+    background-color: #555;
+}
+
+/* Agar dropdown muncul saat diklik */
+.menu-container.active .menu-dropdown {
+    display: block;
+}
+
+
 audio{
     text-align: center;
+    
+    width: 150px;
 }
 
 
@@ -48,6 +107,38 @@ audio{
 
 .image-grid img:hover {
     transform: scale(1.20);
+}
+
+.navigation {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.page-button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.footer button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #5a6268;
 }
 
 

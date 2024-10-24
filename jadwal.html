@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JADWAL PELAJARAN X.L</title>
+
+    <div class="menu-container">
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu-dropdown">
+            <a href="halaman1.html">Home</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="dino.html">Game</a>
+        </div>
+    </div>
+
+
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef4f4;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 10px;
+            margin-top: 70px;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .schedule, .picket {
+            background: #2575ae;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 234, 255);
+            padding: 15px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border: 2px solid #00ddff;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #f7ff06;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .day, .picket-day {
+            background: #03eaff;
+            color: #df0909;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .day:hover, .picket-day:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        .day span, .picket-day span {
+            font-weight: bold;
+            color: hsl(0, 0%, 0%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="schedule">
+            <h2>JADWAL MAPEL X.L</h2>
+
+            <div class="day">
+                <span>Senin:</span> Seni Budaya, Agama Hindu, Sosiologi, Project
+            </div>
+            <div class="day">
+                <span>Selasa:</span> Bahasa Bali, Sejarah, Bahasa Inggris
+            </div>
+            <div class="day">
+                <span>Rabu:</span> Biologi, Kimia, Matematika
+            </div>
+            <div class="day">
+                <span>Kamis:</span> Bahasa Indonesia, Project, Geografi
+            </div>
+            <div class="day">
+                <span>Jumat:</span> Fisika, Project, Informatika, Penjas
+            </div>
+            <div class="day">
+            <span>Sabtu:</span> Ekonomi, PPKN, Project
+        </div>
+
+
+
+
+        </div>
+
+        <div class="picket">
+            <h2>JADWAL PIKET X.L</h2>
+
+            <div class="picket-day">
+                <span>Senin:</span> Gungde, Gek mas, Karan, Apri, Wisnu, Anatya
+            </div>
+            <div class="picket-day">
+                <span>Selasa:</span> Gung Indra, Saras, Elsika, Yoga, Ardika, Okik
+            </div>
+            <div class="picket-day">
+                <span>Rabu:</span> Sastra, Sudanta, Aga, Aggreni, Wilya, Wulan
+            </div>
+            <div class="picket-day">
+                <span>Kamis:</span> Purnami, Aurel, Deva, Oka, Candra, Astiti
+            </div>
+            <div class="picket-day">
+                <span>Jumat:</span> Dekta, Pager, Rendra, Nadnya, Beatrix, Abdi
+            </div>
+            <div class="picket-day">
+                <span>Sabtu:</span> Wiwik, Ristya, Kartika, Intan, Dika, Gusde Suarbawa
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
