@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Dino</title>
+    <link rel="stylesheet" href="styles.css">
 
     <div class="menu-container">
         <div class="menu-btn">
@@ -17,6 +18,13 @@
             <a href="dino.html">Game</a>
         </div>
     </div>
+
+    <script>
+        // Event untuk toggle menu saat tombol diklik
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.menu-container').classList.toggle('active');
+        });
+    </script>
 
     <style>
         body {
@@ -55,7 +63,7 @@
             width: 20px;
             height: 40px;
             background-color: green;
-            animation: move 2s infinite linear;
+            animation: move 1ms infinite linear;
         }
 
         @keyframes move {
@@ -144,7 +152,7 @@
                         score++;
                         scoreDisplay.textContent = 'Score: ' + score;
                     }
-                    cactusPosition -= 5; // Menggerakkan cactus
+                    cactusPosition -= 10; // Menggerakkan cactus
                     cactus.style.right = cactusPosition + 'px';
                 }, 20);
             }, 2000);

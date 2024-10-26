@@ -1,1 +1,137 @@
-SANTAI DULU KAWAN PROSESS !!
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladusing class</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO </h1>
+        <p>ESPORT X.L</p>
+    </header>
+
+    
+    <div class="audio-container">
+        <audio controls autoplay loop>
+        <source src="berlutut.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+
+
+    <div class="menu-container">
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu-dropdown">
+            <a href="halaman1.html">Home</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="dino.html">Game</a>
+        </div>
+    </div>
+
+    <script>
+        // Event untuk toggle menu saat tombol diklik
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.menu-container').classList.toggle('active');
+        });
+    </script>
+
+
+    <section class="gallery">
+        <h2>ESPORT</h2>
+
+        <div class="image-grid">
+
+            <img src="es.jpg" alt=" 1">
+            <img src="po.jpg" alt=" 2">
+            
+        </div>
+
+
+        <div>
+            <h2></h2>
+            <button onclick="loginToGame()">LOGIN</button>
+        </div>
+        
+
+        <div class="navigation">
+            <a href="halaman1.html" class="page-button">1</a>
+            <a href="halaman2.html" class="page-button">2</a>
+            <a href="halaman3.html" class="page-button">3</a>
+        </div>
+
+
+       
+
+    
+        <div class="footer">
+            <button onclick="goToPreviousPage()"><</button>
+            <button onclick="goToNextPage()">></button>
+        </div>
+    
+
+        <style>
+           
+    
+            button {
+                background-color: #42e071;
+                margin-bottom: 10px;
+                margin-top: 5pxpx;
+                color: #000;
+                border: none;
+                padding: 10px 20px;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s;
+            }
+    
+            button:hover {
+                background-color: #04abf9;
+                transform: scale(1.05);
+            }
+    
+            button:active {
+                background-color: #04abf9;
+                transform: scale(1);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+
+
+
+        <script>
+            function goToPreviousPage() {
+                window.location.href = 'halaman2.html'; // Ganti dengan nama file halaman sebelumnya jika ada
+            }
+    
+            function goToNextPage() {
+                window.location.href = 'halaman3.html';
+            }
+        </script>
+
+
+<script>
+    function loginToGame() {
+        window.location.href = "mobilelegends://";
+        setTimeout(() => {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.mobile.legends";
+        }, 2000);
+    }
+</script>
+
+
+    
+        
+    </section>
+        
+    <footer>
+        <p>&copy; 2024 LADUSING</p>
+    </footer>
+</body>
+</html>
