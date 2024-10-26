@@ -57,18 +57,18 @@
     </div>
 
     <script>
-        const correctPassword = "kepala pusing";  // Ganti dengan password yang kamu inginkan
+        const correctPassword = "admin#1234";  // Ganti dengan password yang kamu inginkan
 
         function checkPassword() {
             const inputPassword = document.getElementById("passwordInput").value;
             const errorSound = document.getElementById("errorSound");
 
             if (inputPassword === correctPassword) {
-                alert("TAU DARI MANA PASSWORD NYA !");
+                alert("ANJAY!");
                 location.href ='halaman1.html'
                 // Redirect ke halaman lain atau apa pun yang kamu mau lakukan
             } else {
-                alert("SALAH GOBLOK");
+                alert("SALAH");
                 errorSound.play();  // Memutar suara jika password salah
             }
         }
